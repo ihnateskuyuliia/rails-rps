@@ -1,4 +1,8 @@
 class AnimalController < ApplicationController
+  def rules
+    render({ :template => "game_templates/rules"})
+  end
+
   def dog
     @random_move = ["rock", "paper", "scissors"].sample
     
